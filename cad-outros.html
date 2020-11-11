@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Inicial</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'><link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- MENU LATERAL -->
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a href="index.html">MENU</a>
+        <div id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+           <!-- sidebar-search  -->
+      <div class="sidebar-menu">
+        <ul>
+          <li class="sidebar-dropdown">
+            <a href="solicit-pedido.php">
+              <i class="fa fa-shopping-cart"></i>
+              <span>SOLICITAÇÃO DE PEDIDOS</span>
+              
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i>
+              <span>CADASTRO DE PRODUTOS</span>
+              
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="cad-pizza.html">SABORES DE PIZZA
+
+                  </a>
+                </li>
+                <li>
+                  <a href="cad-refri.html">MARCAS DE REFRIGERANTE</a>
+                </li>
+                <li>
+                  <a href="cad-outros.html">OUTROS</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>LISTA DE CLIENTES</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="cad-cliente.html">CADASTRO DE CLIENTE
+
+                  </a>
+                </li>
+            </div>
+           
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-chart-line"></i>
+              <span>FLUXO DE ENTRADA</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="cad-cliente.html">FLUXO DE ENTRADA
+                  </a>
+                </li>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    </nav>    
+    <!--site-->
+    <main class="page-content-cad">
+      <div class="cad-wrapper" style="height: 18rem;">
+        <h3>Cadastro de outros itens</h3>
+        <form action="scripts/cadastrando.php?formulario=4" method="post">
+          <input type="text" class="field" name="nm_outro" placeholder="Informe o nome do item">
+          <input type="text" class="field" name="vl_outro" placeholder="Informe o preço">
+          <button>Cadastrar</button>
+        </form>
+      </div>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js'></script><script  src="./script.js"></script>
+    
+    </body>
+    </html>
