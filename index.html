@@ -3,8 +3,21 @@
   <meta charset="UTF-8">
   <title>Pagina Inicial</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'><link rel="stylesheet" href="./css/style.css">
-
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+<link rel="stylesheet" href="./css/style.css">
+<style>
+  .card {
+    margin-top: 20px;
+    max-width: 15%;
+}
+.card-deck {
+    justify-content: center;
+}
+.card-grafico {
+    max-width: 106%;
+    width: 104%;
+}
+</style>
 </head>
 <body>
 <!-- MENU LATERAL -->
@@ -74,7 +87,7 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="cad-cliente.html">FLUXO DE ENTRADA
+                  <a href="fluxo.html">FLUXO DE ENTRADA
                   </a>
                 </li>
             </div>
@@ -84,54 +97,72 @@
       <!-- sidebar-menu  -->
     </div>
     </nav>
+    <!--======================== MUDEI AQUI ========================  -->
+    <style>
+      .row-center{
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;}
+    </style>
+    <!--======================== MUDEI AQUI ========================  -->
   <!-- SITE -->
   <main class="page-content">
     <div class="container-fluid" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
       <h2>Impact Bits</h2>
       <h5>SERVIÇOS</h5>
       <div class="coluna" style="margin: 0rem; padding: 0px;">
-        <div class="row" style="margin: 0rem; padding: 0px;">
-          <!-- SOLICITAÇÃO DE PEDIDOS-->
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2" style="padding: 0px 15px;">          
-            <div class="card rounded-0 p-0 shadow-sm">
-              <a href="solicit-pedido.html"><img src="img/pizza.jpg" class="card-img-top rounded-0" alt="Angular pro sidebar">
-              <div class="card-body text-center">
+        <!--======================== AQUI NA ROW EU ADICIONEI MAIS UMA CLASSE ROW-CENTER, MAS ELA PODIA TER QUALQUER NOME ========================  -->
+        <div class="row row-center" style="margin: 0rem; padding: 0px;">
+          <div class="card-deck">
+      
+            <div class="card">
+              <a href="">
+                <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
+                <div class="card-body text-center">
                   <h6 class="card-title" style="font-size: .7rem;">SOLICITAÇÃO DE PEDIDOS</h6></a>
-              </div>
-            </div>          
-          </div>
-          <!-- cadastro de produto-->
-          
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2" style="padding: 0px 15px;">          
-              <div class="card rounded-0 p-0 shadow-sm">
-                <a href="#"><img src="img/cadastro-prod.jpg" class="card-img-top rounded-0" alt="Angular pro sidebar">
-                  <div class="card-body text-center">
-                    <h6 class="card-title" style="font-size: .7rem;">CADASTRO PRODUTO</h6>
-                  </div></a>
-              </div>          
+                </div>
+              </a>
             </div>
-          <!-- SOLICITAÇÃO DE PEDIDOS-->
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2" style="padding: 0px 15px;">          
-                <div class="card rounded-0 p-0 shadow-sm">
-                  <a href="#"><img src="img/LISTA.jpg" class="card-img-top rounded-0" alt="Angular pro sidebar">
+              
+            
+              <div class="card">
+                <a href="#">
+                  <img class="card-img-top" src="img/cadastro-prod.jpg" alt="Card image cap">
                   <div class="card-body text-center">
-                      <h6 class="card-title" style="font-size: .7rem;">LISTA DE CLIENTES</h6></a>
+                    <h6 class="card-title" style="font-size: .7rem;">SOLICITAÇÃO DE PEDIDOS</h6></a>
                   </div>
-                </div>          
-            </div>
+                </a>
+              </div>
+      
+              <div class="card">
+                <a href="#">
+                  <img class="card-img-top" src="img/LISTA.jpg" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <h6 class="card-title" style="font-size: .7rem;">SOLICITAÇÃO DE PEDIDOS</h6></a>
+                  </div>
+                </a>
+              </div>
+          </div>
+      
         </div>
          <!--LISTA DE CLIENTES-->
+         <!--======================== AQUI EU CRIEI UMA ROW EU COLOQUEI UMA PARA MANDAR ESSA DIVIDI UMA LINHA ABAIXO E 
+                                      CLASSE ROW-CENTER, MAS ELA PODIA TER QUALQUER NOME ========================  -->
+         <div class="row row-center">
          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0px 15px 0px 0px;">          
-          <div class="card rounded-0 p-0 shadow-sm">
-            <a href="#"><img src="img/GRAFICOS.jpg" class="card-img-top rounded-0" alt="Angular pro sidebar">
+          <div class="card card-grafico rounded-0 p-0 shadow-sm">
+            <a href="#"><img src="img/grafico.png" class="card-img-top rounded-0" alt="Angular pro sidebar" style="height: 18rem;">
               <div class="card-body text-center">
                 <h6 class="card-title" style="font-size: .7rem;">FLUXO DE ENTRADA</h6>
               </div></a>
           </div>          
         </div>
       </div>
+      </div>
     </div>
 
+    
   </main>
   <!-- page-content" -->
 </div>

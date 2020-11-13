@@ -76,7 +76,7 @@
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="cad-cliente.html">FLUXO DE ENTRADA
+                  <a href="fluxo.html">FLUXO DE ENTRADA
                   </a>
                 </li>
             </div>
@@ -154,5 +154,14 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js'></script><script  src="./script.js"></script>
     
+    <script>
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var msg = url.searchParams.get("msg");
+      if (msg) {
+        alert(msg);
+      }
+    </script>
+
     </body>
     </html>
